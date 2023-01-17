@@ -22,7 +22,8 @@ body {
 }
 
 .show-modal,
-.bcolor {
+.bcolor,
+.lcolor {
   font-size: 2rem;
   font-weight: 600;
   padding: 1.75rem 3.5rem;
