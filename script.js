@@ -4,6 +4,7 @@ const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
 const btnOpen = document.querySelectorAll('.show-modal');
 const btnClose = document.querySelector('.close-modal');
+const btnNightMode = document.querySelector('.bcolor');
 
 const openModal = function () {
   modal.classList.remove('hidden');
@@ -13,6 +14,10 @@ const openModal = function () {
 const closeModal = function () {
   modal.classList.add('hidden');
   overlay.classList.add('hidden');
+};
+
+const NightMode = function () {
+  document.body.style.background = 'black';
 };
 
 document.addEventListener('keydown', function (e) {
@@ -27,3 +32,4 @@ for (let i = 0; i < btnOpen.length; i++) {
 
 btnClose.addEventListener('click', closeModal);
 overlay.addEventListener('click', closeModal);
+btnNightMode.addEventListener('click', NightMode);
